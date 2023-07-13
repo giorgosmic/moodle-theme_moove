@@ -1,12 +1,61 @@
-.path-login {
-    #page {
-        max-width: 100%;
+
+canvas {
+    display: block;
+    vertical-align: bottom;
+}
+
+#particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+body#page-login-index {
+    .card {
+        background-color: #ffffffe3;
+        padding: 1.25rem;
+
+        a {
+            color: #a31004;
+        }
+    }
+    .btn-primary {
+        background-color: #a31004;
+        border-color: #a31004;
     }
 
-    .login-identityprovider-btn.facebook {
-        background-color: $facebook-color;
-        color: #fff;
-    }
+}
+
+#page-login-index.moove-login .loginpanel .card-block .form {
+    height: initial !important;
+}
+
+#page-login-index #page-footer {
+    background-color: #202224!important;
+    color: #dcdcdc!important;
+}
+
+body#page-login-index #copyright {
+    background-color: #181919;
+    color: darkgrey;
+    padding: 5px;
+}
+
+#page-footer .hrfooter {
+    border-top: 2px solid #818a91;
+    margin-top: 0;
+}
+
+body#page-login-index #page-footer a {
+    color: #ccc;
+}
+
+.quote {
+    font-family: 'Just Another Hand', cursive;
+    color: #fff;
+    margin: auto;
+    font-size: 2rem;
+    padding: 0 10px 0 10px;
 }
 
 #page-login-index {

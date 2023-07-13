@@ -28,6 +28,40 @@
  * @param theme_config $theme The theme config object.
  * @return string
  */
+
+//function theme_moove_set_loginbgimg($theme) {
+//    global $OUTPUT;
+//
+//    $loginbgimg = $theme->setting_file_url('loginbgimg', 'loginbgimg');
+//
+//    if (is_null($loginbgimg)) {
+//        $loginbgimg = $OUTPUT->image_url('login_bg', 'theme');
+//    }
+//
+//    $headercss = "#page-login-index.moove-login #page-wrapper #page {background-image: url('$loginbgimg');}";
+//
+//    return $headercss;
+//}
+
+/**
+ * Adds the logo image to CSS.
+ *
+ * @param theme_config $theme The theme config object.
+ * @return string
+ */
+
+//function theme_moove_get_logo() {
+//    global $OUTPUT;
+//    $theme = theme_config::load('moove');
+//
+//    $logoimgurl = $theme->setting_file_url('logo', 'logo');
+//
+//    if (is_null($logoimgurl)) {
+//        $logoimgurl = $OUTPUT->image_url('logo', 'theme');
+//    }
+//
+//    return $logoimgurl;
+//}
 function theme_moove_get_main_scss_content($theme) {
     global $CFG;
 
@@ -68,12 +102,15 @@ function theme_moove_get_extra_scss($theme) {
     $content = '';
 
     // Sets the login background image.
+//    $loginbgimg = $OUTPUT->image_url('login_bg', 'theme');
     $loginbgimgurl = $theme->setting_file_url('loginbgimg', 'loginbgimg');
     if (!empty($loginbgimgurl)) {
         $content .= 'body.pagelayout-login #page { ';
         $content .= "background-image: url('$loginbgimgurl'); background-size: cover;";
         $content .= ' }';
     }
+//    $logoimgurl = $theme->setting_file_url('logo', 'logo');
+//    $loginbgimg = $OUTPUT->image_url('login_bg', 'theme');
 
     // Always return the background image with the scss when we have it.
     return !empty($theme->settings->scss) ? $theme->settings->scss . ' ' . $content : $content;
@@ -91,7 +128,11 @@ function theme_moove_get_pre_scss($theme) {
         // Config key => [variableName, ...].
         'brandcolor' => ['brand-primary'],
         'secondarymenucolor' => 'secondary-menu-color',
-        'fontsite' => 'font-family-sans-serif'
+        'fontsite' => 'font-family-sans-serif',
+        'brandcolor' => ['brand-primary'],
+        'navbarheadercolor' => 'navbar-header-color',
+        'navbarbg' => 'navbar-bg',
+        'navbarbghover' => 'navbar-bg-hover'
     ];
 
     // Prepend variables first.

@@ -29,11 +29,25 @@
         }
     }
 }}
-{{> theme_moove/head }}
+
+{{{ output.doctype }}}
+<html {{{ output.htmlattributes }}}>
+<head>
+    <title>{{{ output.page_title }}}</title>
+    <link rel="shortcut icon" href="{{{ output.favicon }}}" />
+    {{{ output.standard_head_html }}}
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Just+Another+Hand&display=swap" rel="stylesheet">
+
+</head>
 
 <body {{{ bodyattributes }}}>
 {{> core/local/toast/wrapper}}
-
+<div id="particles-js"></div>
 <div id="page-wrapper">
 
     {{{ output.standard_top_of_body_html }}}
@@ -41,28 +55,32 @@
     <div id="page" class="container-fluid mt-0">
         <div id="page-content" class="row">
             <div id="region-main-box" class="col-12">
-                <section id="region-main" class="col-12 h-100" aria-label="{{#str}}content{{/str}}">
-                    <div class="login-wrapper">
-                        <div class="login-container">
-                            {{{ output.main_content }}}
-                        </div>
-                    </div>
+                <section id="region-main" class="col-12">
+                    {{{ output.course_content_header }}}
+                    {{{ output.main_content }}}
+                    {{{ output.course_content_footer }}}
                 </section>
             </div>
+            {{#todays_quote}}
+                <div class="quote">"{{text}}" -- {{from}} </div>
+            {{/todays_quote}}
         </div>
     </div>
 </div>
 
-<div class="d-none">
-    {{{ output.standard_footer_html }}}
-    {{{ output.standard_end_of_body_html }}}
-</div>
+
+
+{{> theme_moove/loginfooter }}
 </body>
+    {{! <script src="https://pagecdn.io/lib/particles/2.0.0/particles.min.js" crossorigin="anonymous" integrity="sha256-+u54FaX9J+k40eAcg5K2YzICSQjrEYBI9gju5nE3HfY=" ></script> }}
+    {{! https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.2/particles.min.js }}
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles@1.17.10/dist/tsparticles.min.js" integrity="sha256-GgOiDX1vgsB/Ila38kGFuHJKedqyf8AMNx7lIPRuzV4=" crossorigin="anonymous"></script>
 </html>
 
 {{#js}}
-    M.util.js_pending('theme_boost/loader');
-    require(['theme_boost/loader'], function() {
-      M.util.js_complete('theme_boost/loader');
-    });
+require(['theme_boost/loader']);
+
+{{#particlesconfig}}
+    window.particlesJS('particles-js', {{{particlesconfig}}});
+{{/particlesconfig}}
 {{/js}}

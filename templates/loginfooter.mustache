@@ -1,0 +1,56 @@
+<footer id="page-footer" class="p-y-1 bg-inverse" style=" padding-bottom: 0!important;">
+	<div class="container">
+		<div class="row">
+		
+			<div class="col">
+			    {{{ footershortwelcomemessage }}}
+				{{{ output.login_info }}}
+                <div class="tool_usertours-resettourcontainer"></div>
+			</div>
+			
+			<div class ="col">
+				<h5>{{{ links }}}</h5><hr class="hrfooter">
+				<ul id = "links" class="footerlist">
+				{{# univmainwebsite }}
+						<li><i class="fa fa-chevron-circle-right"></i> <a href="{{{ univmainwebsite }}}" target="blank"><span class="list-arrow"></span>{{{ mainwebsite }}}</a></li>
+				{{/ univmainwebsite }}
+				
+				{{# univstudentpanel }}
+	 					<li><i class="fa fa-chevron-circle-right"></i> <a href="{{{ univstudentpanel }}}" target="blank"><span class="list-arrow"></span>{{{ studentpanel }}}</a></li>
+	 			{{/ univstudentpanel }}
+
+	 			{{{#output.standard_footer_html}}}
+	 				{{{ output.standard_footer_html }}}
+	 			{{{/output.standard_footer_html}}}
+				</ul>
+			</div>
+			<div class="col">
+				<h5>{{{ contact }}}</h5><hr class="hrfooter">
+				<ul class="footerlist">
+					{{# univaddress }}
+						<li> <i class="fa fa-map-marker"></i> {{{ address }}}: {{{ univaddress }}}</li>
+					{{/ univaddress }}
+					{{# univtelephone }}
+						<li> <i class="fa fa-phone"></i> {{{ telephone }}}: {{{ univtelephone }}}</li>
+					{{/ univtelephone }}
+					<li> <i class="fa fa-envelope"></i> {{{ email }}}: {{{ univemail }}}</li>
+				</ul>
+			</div>
+			
+		</div>
+	</div>
+    
+	<div class="container-fluid" id="copyright">
+		<div class="row" >
+			<div class="col" style="text-align: center; vertical-align: bottom;">{{{ univname }}} &#169; {{{ year }}} | {{{ allrightsreserved }}}</div>
+			<div class="col" style="text-align: center; vertical-align: bottom;">
+				<a class="btn btn-link p-a-0" role="button" data-container="body" data-toggle="popover" data-placement="top" data-content="<div class=&quot;no-overflow&quot;><p>{{{ termsofusemsg }}}</p>
+				</div> " data-html="true" tabindex="0" data-trigger="focus" data-original-title="{{{ termsofuse }}}" title="{{{ termsofuse }}}">{{{ termsofuse }}}
+				</a>
+			</div>
+		</div>
+	</div>
+        
+        {{{ output.standard_end_of_body_html }}}
+        {{{ google_tag }}}
+</footer>

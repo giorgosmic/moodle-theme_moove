@@ -30,6 +30,7 @@ $string['choosereadme'] = 'Moove is a modern highly-customisable theme. This the
 
 $string['currentinparentheses'] = '(current)';
 $string['region-side-pre'] = 'Right';
+$string['login'] = 'Welcome to the Virtual Learning Environment (VLE).';
 $string['prev_section'] = 'Previous section';
 $string['next_section'] = 'Next section';
 $string['themedevelopedby'] = 'This theme was developed by';
@@ -134,10 +135,93 @@ $string['instagram'] = 'Instagram URL';
 $string['instagramdesc'] = 'Enter the URL of your Instagram. (i.e https://www.instagram.com/myinstitution)';
 $string['whatsapp'] = 'Whatsapp number';
 $string['whatsappdesc'] = 'Enter your whatsapp number for contact.';
-$string['telegram'] = 'Telegram';
-$string['telegramdesc'] = 'Enter your Telegram contact or group link.';
-$string['contactus'] = 'Contact us';
-$string['followus'] = 'Follow us';
+$string['topfooterimg'] = 'Footer image';
+$string['topfooterimgdesc'] = 'Upload your custom footer image here if you want to replace the default image. Recommended size is 1500px x 400px or higher.';
+$string['disablebottomfooter'] = 'Disable bottom footer';
+$string['disablebottomfooterdesc'] = 'Disables the orange bottom footer';
+
+
+
+
+// custom
+$string['helpcenter'] = 'Help Center';
+$string['ael'] = 'Academic English Lab';
+#footer
+$string['footershortwelcomemessage'] = 'Welcome to the {$a} VLE.';
+$string['links'] = 'Links';
+$string['contact'] = 'Contact';
+$string['allrightsreserved'] = 'All rights reserved';
+$string['termsofuse'] = 'Terms of use';
+$string['termsofusemsg'] = 'This system contains information that is the property of UNICAF LTD and is for authorized use only. Unauthorized access is prohibited. Activities of users on this system are monitored. Anyone using this system expressly consents to such monitoring and is advised that if such monitoring reveals possible evidence of criminal activity, evidence of such activity may be provided to law enforcement officials.';
+$string['address'] = 'Address';
+$string['telephone'] = 'Telephone';
+$string['email'] = 'Email';
+$string['mainwebsite'] = 'Main Website';
+$string['studentpanel'] = 'Student Panel';
+
+#settings
+$string['univinfosettings'] = 'University Info';
+$string['univname'] = 'University Name';
+$string['univname_desc'] = 'University Name will be included in the footer';
+
+$string['univmainwebsite'] = 'Main Website URL';
+$string['univmainwebsite_desc'] = '(Optional) The URL of the main website';
+
+$string['univstudentpanel'] = 'Student Panel';
+$string['univstudentpanel_desc'] = '(Optional) The URL of the Student Panel';
+
+$string['univaddress'] = 'Address';
+$string['univaddress_desc'] = '(Optional) Physical address of the university';
+
+$string['univtelephone'] = 'Telephone';
+$string['univtelephone_desc'] = '(Optional) Phone number';
+
+$string['univemail'] = 'Email';
+$string['univemail_desc'] = 'The email address of the university';
+
+$string['loginhelpstringname'] = 'Having trouble logging in?';
+
+$string['loginhelpmsg'] = '
+<p><h5>How can you access the VLE</h5></p>
+<p>Access to the Virtual Learning Environment (VLE) is granted to whomever has been registered to any module at least once. <br>
+To register you need to access your Student Panel (SIS), the link is under Links section below.</p>
+<p><h5>Credentials</b></h5>
+<p><b>Username:</b> It is your personal email address you used to register with us. Unless you’ve
+requested to change your email address in our records then, use the new email address as
+username.<br />
+<b>Password:</b> It is the password you received via email when you registered for a module. In case
+you change that password, the latest password you entered is the valid one.</p>
+
+<p>
+<h5>Login Instructions</h5>
+    <ol>
+        <li>Type in your email address in the ​ “Username”​ input field.</li>
+        <li>Type in you correct password in the​ “Password”​ input field.</li>
+        <li>Then click on ​ “Log in”​ button.</li>
+    </ol>
+</p>
+
+<p>If you forgot your ​<b>VLE</b>​ password, you can reset it by using the ​“Forgotten your username or password?”​ link located 
+below.</p>';
+
+
+
+// Forum.
+$string['forumsettings'] = 'Forum';
+$string['forumsettingsdesc'] = 'Configure the general forum settings for the theme here.';
+$string['forumhtmlemailheader'] = 'Email header';
+$string['forumhtmlemailheaderdesc'] = 'Configure the email header for the forum messages.';
+$string['forumhtmlemailfooter'] = 'Email footer';
+$string['forumhtmlemailfooterdesc'] = 'Configure the email footer for the forum messages.';
+$string['forumcustomtemplate'] = 'Use a pretty template for forum mails';
+$string['forumcustomtemplatedesc'] = 'Enable that in order to use a pretty template when sending forum messages via email. If not enabled standard formatting of forum mails will be used.';
+
+$string['certificates'] = 'Certificates';
+$string['certificatestitle'] = 'My certificates';
+$string['subtitleallcertificates'] = 'Certificates from all courses';
+$string['subtitlecoursecertificates'] = 'Course certificates';
+$string['nohavecertificates'] = 'You no have certificates yet';
+$string['coursesections'] = 'Course sections';
 
 // Mypublic page.
 $string['aboutme'] = 'About me';
