@@ -185,8 +185,9 @@ class core_renderer extends \theme_boost\output\core_renderer {
         $context = $form->export_for_template($this);
 
         $context->errorformatted = $this->error_text($context->error);
-        $context->logourl = $this->get_logo();
 
+//        $context->logourl = $this->get_logo();
+        $get_logo = $this->get_logo();
         if ($get_logo) {
             $context->logourl = $get_logo;
         } else {
