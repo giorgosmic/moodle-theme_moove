@@ -186,6 +186,14 @@ class core_renderer extends \theme_boost\output\core_renderer {
 
         $context->errorformatted = $this->error_text($context->error);
         $context->logourl = $this->get_logo();
+
+        if ($get_logo) {
+            $context->logourl = $get_logo;
+        } else {
+            $context->logourl = (string) theme_moove_get_logo();
+        }
+        $context->loginhelpstringname =  get_string('loginhelpstringname','theme_moove');
+
         $context->sitename = format_string($SITE->fullname, true,
             ['context' => context_course::instance(SITEID), "escape" => false]);
 
