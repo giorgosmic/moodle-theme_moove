@@ -103,7 +103,8 @@ function theme_moove_get_extra_scss($theme) {
 
     // Sets the login background image.
 //    $loginbgimg = $OUTPUT->image_url('login_bg', 'theme');
-    $loginbgimgurl = $theme->setting_file_url('loginbgimg', 'loginbgimg');
+    $loginbgimgurl = $theme->image_url('login_bg', 'theme');
+//    $loginbgimgurl = $theme->setting_file_url('loginbgimg', 'loginbgimg');
     if (!empty($loginbgimgurl)) {
         $content .= 'body.pagelayout-login #page { ';
         $content .= "background-image: url('$loginbgimgurl'); background-size: cover;";
