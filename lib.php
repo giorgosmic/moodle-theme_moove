@@ -56,6 +56,7 @@ function theme_moove_get_logo() {
 
     $logoimgurl = $theme->setting_file_url('logo', 'logo');
 
+
     if (is_null($logoimgurl)) {
         $logoimgurl = $OUTPUT->image_url('logo', 'theme');
     }
