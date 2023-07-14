@@ -28,7 +28,18 @@ use theme_config;
 use context_course;
 use moodle_url;
 use html_writer;
-use theme_moove\output\core_course\activity_navigation;
+use custom_menu;
+use action_menu_filler;
+use action_menu_link_secondary;
+use stdClass;
+use action_menu;
+use pix_icon;
+use core_text;
+use help_icon;
+use context_system;
+use core_course_list_element;
+
+defined('MOODLE_INTERNAL') || die;
 
 /**
  * Renderers to align Moodle's HTML with that expected by Bootstrap
