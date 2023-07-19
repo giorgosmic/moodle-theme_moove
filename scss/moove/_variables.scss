@@ -1,11 +1,12 @@
-$brand-primary: #0f47ad !default;
+//$brand-primary: #0f47ad !default;
+$brand-primary: #303135 ;
 $green: #64a44e !default;
 $gold: #f7bf29 !default;
 $background: #f2f3f7;
 
 
 
-$secondary-menu-color: $brand-primary !default;
+$secondary-menu-color: $brand-primary ;
 $m-login-padding: 10px;
 $m-login-boxheight: 350px;
 
@@ -30,6 +31,7 @@ $breadcrumb-bg: #e0e0e0 !default;
 $card-border-radius: 0 !default;
 $card-border-color: #d7dfe3 !default;
 
+//From 39 custom theme
 $navbar-height: 70px !default;
 $navbar-bg: #303135 !default;
 $navbar-bg-hover: #2b2c2f !default;
