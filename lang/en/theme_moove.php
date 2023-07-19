@@ -33,6 +33,7 @@ $string['region-side-pre'] = 'Right';
 $string['login'] = 'Welcome to the Virtual Learning Environment (VLE).';
 $string['prev_section'] = 'Previous section';
 $string['next_section'] = 'Next section';
+$string['themedevelopedby'] = 'This theme was developed by';
 $string['search_site'] = 'Search on site';
 $string['search_forums'] = 'Search on course forums';
 $string['platform_access'] = 'Access to the platform';
@@ -64,6 +65,8 @@ $string['brandcolor'] = 'Brand colour';
 $string['brandcolor_desc'] = 'The accent colour.';
 $string['navbarheadercolor'] = 'Navbar header color';
 $string['navbarheadercolor_desc'] = 'The top navbar header color';
+$string['secondarymenucolor'] = 'Secondary menu color';
+$string['secondarymenucolor_desc'] = 'Secondary menu background color';
 $string['navbarbg'] = 'Navbar color';
 $string['navbarbg_desc'] = 'The left navbar color';
 $string['navbarbghover'] = 'Navbar hover color';
@@ -74,6 +77,10 @@ $string['coursedefault'] = 'Default presentation';
 $string['coursecover'] = 'Cover image';
 $string['courselistview'] = 'Enable course list view';
 $string['courselistviewdesc'] = 'Switch the courses view from box to list view';
+$string['fontsite'] = 'Site font';
+$string['fontsite_desc'] = 'Default font site. You can try out the fonts on <a href="https://fonts.google.com">Google Fonts site</a>.';
+$string['enablecourseindex'] = 'Enable course index';
+$string['enablecourseindex_desc'] = 'You can show/hide course index navigation';
 
 // Advanced settings tab.
 $string['advancedsettings'] = 'Advanced';
@@ -149,7 +156,10 @@ $string['topfooterimg'] = 'Footer image';
 $string['topfooterimgdesc'] = 'Upload your custom footer image here if you want to replace the default image. Recommended size is 1500px x 400px or higher.';
 $string['disablebottomfooter'] = 'Disable bottom footer';
 $string['disablebottomfooterdesc'] = 'Disables the orange bottom footer';
-
+$string['telegram'] = 'Telegram';
+$string['telegramdesc'] = 'Enter your Telegram contact or group link.';
+$string['contactus'] = 'Contact us';
+$string['followus'] = 'Follow us';
 
 
 
