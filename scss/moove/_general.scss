@@ -51,8 +51,10 @@ body {
 
 a {
     transition: all 0.25s ease-out;
-    color: $brand-primary;
+    color: $ancor_links;
 }
+
+
 
 .dropdown-item:active,
 .dropdown-item:hover,
