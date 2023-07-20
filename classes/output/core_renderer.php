@@ -28,6 +28,7 @@ use theme_config;
 use context_course;
 use moodle_url;
 use html_writer;
+use theme_moove\output\core_course\activity_navigation;
 use custom_menu;
 use action_menu_filler;
 use action_menu_link_secondary;
