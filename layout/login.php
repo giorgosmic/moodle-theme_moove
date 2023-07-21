@@ -43,6 +43,8 @@ if ($json_quotes === null) {
 }
 $starting_day = date('z') + 1;
 
+
+
 $templatecontext = [
     'sitename' => format_string($SITE->shortname, true, ['context' => context_course::instance(SITEID), "escape" => false]),
     'output' => $OUTPUT,
@@ -71,7 +73,7 @@ $templatecontext = [
 	'univaddress' => get_config("theme_moove","univaddress"),
 	'univtelephone' => get_config("theme_moove","univtelephone"),
 	'univemail' => get_config("theme_moove","univemail"),
-	'particlesconfig' => $particlesconfig
+	'particlesconfig' => $particlesconfig,
 ];
 
 
