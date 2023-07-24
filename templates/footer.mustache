@@ -211,4 +211,33 @@
     require(['theme_boost/footer-popover'], function(FooterPopover) {
         FooterPopover.init();
     });
+
+<!--    Matomo-->
+    {{#unicaf_uuid}}
+
+        function load_matomo_tag_manager(c){
+        var _mtm = window._mtm = window._mtm || [];
+        var preloadScript = document.createElement('link');
+        var u="https://matomo.unicaf.org/";
+        preloadScript.rel = "preload";
+        preloadScript.href = u+"js/container_"+c+".js";
+        preloadScript.as = "script";
+        preloadScript.id = "matomo-tag-manager";
+        preloadScript.onload = function(){
+        _mtm.push({'mtm.startTime': (new Date().getTime()), 'event': 'mtm.Start'});
+        var d=document, g=d.createElement('script'), s=d.getElementById('matomo-tag-manager');
+        g.type='text/javascript'; g.async=true; g.src=u+'js/container_'+c+'.js'; s.parentNode.insertBefore(g,s);
+        }
+        document.head.appendChild(preloadScript);
+        }
+
+        var _mtm = window._mtm = window._mtm || [];
+        _mtm.push({'uid': '{{unicaf_uuid}}' });
+        _mtm.push({'siteId': '{{siteId}}' });
+        load_matomo_tag_manager('{{container}}');
+
+    {{/unicaf_uuid}}
+    {{^unicaf_uuid}}
+
+    {{/unicaf_uuid}}
 {{/js}}
