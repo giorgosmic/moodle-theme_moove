@@ -179,7 +179,7 @@
 //}
 
 #page-footer {
-    background-color: $m-moodle-color;
+    background-color: $m-moodle-footer-color;
     // text-align: center;
     min-height: inherit;
     color: #5d5d5d;
@@ -199,11 +199,18 @@
     }
 
     ul{
-        padding-left: 1rem;
+        //padding-left: 1rem;
+        list-style: none;
     }
     .footerlist {
         list-style-type: none;
     }
+
+    .footer-title{
+        color: $m-moodle-footer-title;
+    }
+
+
 
     h5 {
         color: #ab2323;

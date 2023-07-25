@@ -35,39 +35,43 @@
 <footer id="page-footer">
     <div class="moove-container-fluid footer-columns">
         <div class="row">
-            <div class="col-md-4 column-left">
+            <div class="col-md-4 column-left mt-4">
                 <div class="contact">
                     <h3 class="footer-title">{{#str}}contactus, theme_moove{{/str}}</h3>
 
-                    <ul>
+                    <ul class="pl-0">
                         {{#website}}
-                            <li>
-                                <a href="{{{website}}}" target="_blank" class="website btn btn-link">
-                                    <i class="fa fa-globe"></i>
+                            <li class="d-flex mx-auto">
+                                <a href="{{{website}}}" target="_blank" class="website btn btn-link d-flex mx-auto mx-md-0 align-items-center pl-0">
+                                    <i class="fa fa-globe mr-1"></i>
+                                    {{{website}}}
                                 </a>
                             </li>
                         {{/website}}
                         {{#mobile}}
-                            <li>
-                                <a href="tel:{{{mobile}}}" target="_blank" class="mobile btn btn-link">
-                                    <i class="fa fa-phone"></i>
+                            <li class="d-flex mx-auto">
+                                <a href="tel:{{{mobile}}}" target="_blank" class="mobile btn btn-link d-flex mx-auto mx-md-0 align-items-center pl-0">
+                                    <i class="fa fa-phone mr-1"></i>{{{mobile}}}
                                 </a>
                             </li>
                         {{/mobile}}
                         {{#mail}}
-                            <li>
-                                <a href="mailto:{{{mail}}}" target="_blank" class="mail btn btn-link">
-                                    <i class="fa fa-envelope"></i>
+                            <li class="d-flex mx-auto">
+                                <a href="mailto:{{{mail}}}" target="_blank" class="mail btn btn-link d-flex mx-auto mx-md-0 align-items-center pl-0">
+                                    <i class="fa fa-envelope mr-1"></i>{{{mail}}}
                                 </a>
                             </li>
                         {{/mail}}
                     </ul>
                 </div>
+            </div>
 
+
+            <div class="col-md-4 column-right mt-4">
                 <div class="socialnetworks">
                     <h3 class="footer-title">{{#str}}followus, theme_moove{{/str}}</h3>
 
-                    <ul class="mb-0">
+                    <ul class="mb-0 d-flex mx-auto">
                         {{#facebook}}
                             <li>
                                 <a href="{{{facebook}}}" target="_blank" class="facebook btn btn-link btn-rounded">
@@ -111,7 +115,7 @@
                         {{#whatsapp}}
                             <li>
                                 <a href="https://api.whatsapp.com/send?phone={{{whatsapp}}}" target="_blank" class="whatsapp btn btn-link btn-rounded">
-                                    <i class="fa fa-whatsapp"></i>
+                                <i class="fa fa-whatsapp"></i>
                                 </a>
                             </li>
                         {{/whatsapp}}
@@ -125,19 +129,6 @@
                         {{/telegram}}
                     </ul>
                 </div>
-            </div>
-            <div class="col-md-4 column-center">
-                {{# output.supportemail }}
-                    <div class="supportemail">{{{ output.supportemail }}}</div>
-                {{/ output.supportemail }}
-
-                {{{ output.login_info }}}
-
-<!--                {{{ output.standard_footer_html }}}-->
-
-                <div class="tool_usertours-resettourcontainer"></div>
-            </div>
-            <div class="col-md-4 column-right">
                 {{#enablemobilewebservice}}
                     {{#mobilesetuplink}}
                         <a href="{{{mobilesetuplink}}}">{{#str}}getmoodleonyourmobile, tool_mobile{{/str}}</a>
@@ -158,6 +149,17 @@
                         {{/iosappid}}
                     </div>
                 {{/enablemobilewebservice}}
+            </div>
+            <div class="col-md-4 column-center mt-4">
+                {{# output.supportemail }}
+                    <div class="supportemail">{{{ output.supportemail }}}</div>
+                {{/ output.supportemail }}
+
+                {{{ output.login_info }}}
+
+                <!--                {{{ output.standard_footer_html }}}-->
+
+                <div class="tool_usertours-resettourcontainer"></div>
             </div>
         </div>
     </div>
