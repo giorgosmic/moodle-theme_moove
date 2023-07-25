@@ -43,7 +43,7 @@
                         {{#website}}
                             <li class="d-flex mx-auto">
                                 <a href="{{{website}}}" target="_blank" class="website btn btn-link d-flex mx-auto mx-md-0 align-items-center pl-0">
-                                    <i class="fa fa-globe mr-1"></i>
+                                    <i class="fa fa-globe mr-2"></i>
                                     {{{website}}}
                                 </a>
                             </li>
@@ -51,30 +51,28 @@
                         {{#mobile}}
                             <li class="d-flex mx-auto">
                                 <a href="tel:{{{mobile}}}" target="_blank" class="mobile btn btn-link d-flex mx-auto mx-md-0 align-items-center pl-0">
-                                    <i class="fa fa-phone mr-1"></i>{{{mobile}}}
+                                    <i class="fa fa-phone mr-2"></i>{{{mobile}}}
                                 </a>
                             </li>
                         {{/mobile}}
                         {{#mail}}
                             <li class="d-flex mx-auto">
                                 <a href="mailto:{{{mail}}}" target="_blank" class="mail btn btn-link d-flex mx-auto mx-md-0 align-items-center pl-0">
-                                    <i class="fa fa-envelope mr-1"></i>{{{mail}}}
+                                    <i class="fa fa-envelope mr-2"></i>{{{mail}}}
                                 </a>
                             </li>
                         {{/mail}}
                     </ul>
                 </div>
             </div>
-
-
             <div class="col-md-4 column-right mt-4">
                 <div class="socialnetworks">
                     <h3 class="footer-title">{{#str}}followus, theme_moove{{/str}}</h3>
 
-                    <ul class="mb-0 d-flex mx-auto">
+                    <ul class="mb-0 d-flex mx-auto pl-0">
                         {{#facebook}}
                             <li>
-                                <a href="{{{facebook}}}" target="_blank" class="facebook btn btn-link btn-rounded">
+                                <a href="{{{facebook}}}" target="_blank" class="facebook btn btn-link btn-rounded ">
                                     <i class="fa fa-facebook"></i>
                                 </a>
                             </li>
@@ -139,12 +137,12 @@
                     <div class="stores">
                         {{#androidappid}}
                             <a href="https://play.google.com/store/apps/details?id={{androidappid}}">
-                                <img src="{{config.wwwroot}}/theme/moove/pix/store_google.svg" alt="Play Store">
+                                <img src="{{config.wwwroot}}/theme/moove/pix/store_google_black.png" alt="Play Store">
                             </a>
                         {{/androidappid}}
                         {{#iosappid}}
                             <a class="mt-1" href="https://apps.apple.com/app/id{{iosappid}}">
-                                <img src="{{config.wwwroot}}/theme/moove/pix/store_apple.svg" alt="App Store">
+                                <img src="{{config.wwwroot}}/theme/moove/pix/store_apple_black.svg" alt="App Store">
                             </a>
                         {{/iosappid}}
                     </div>
