@@ -1,6 +1,25 @@
 body {
     background-color: $background !important; /* stylelint-disable-line */
 }
+#page-login-forgot_password{
+    #particles-js{
+        display: none;
+    }
+    #page{
+        background-image: unset;
+    }
+    .quote{
+        display: none;
+    }
+    #region-main{
+        margin-top: 5rem;
+        margin-left: 5rem;
+    }
+    #page-footer{
+        background-color: unset;
+    }
+
+}
 
 #page-header {
     margin: 1.25rem auto;
