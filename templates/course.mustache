@@ -49,6 +49,17 @@
         "addblockbutton": ""
     }
 }}
+<!--Custom Variables for Custom Chat AI-->
+<script type="text/javascript">
+
+    var chat_email = '{{chat-user-email}}'
+    var chat_user_name = '{{chat-user-name}}'
+    var chat_user_sis = '{{chat-user-sis}}'
+    var chat_course_name = '{{chat-course-name}}'
+    var chat_course_id = '{{chat-course-id}}'
+    var chat_course_category = '{{chat-course-category}}'
+</script>
+
 {{> theme_moove/head }}
 
 <body {{{ bodyattributes }}}>
@@ -177,7 +188,9 @@
 
 </body>
 </html>
+
 {{#js}}
+
 M.util.js_pending('theme_boost/loader');
 require(['theme_boost/loader', 'theme_boost/drawer'], function(Loader, Drawer) {
     Drawer.init();

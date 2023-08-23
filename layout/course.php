@@ -104,6 +104,7 @@ $header = $PAGE->activityheader;
 $headercontent = $header->export_for_template($renderer);
 
 $bodyattributes = $OUTPUT->body_attributes($extraclasses);
+
 $templatecontext = [
     'sitename' => format_string($SITE->shortname, true, ['context' => context_course::instance(SITEID), "escape" => false]),
     'output' => $OUTPUT,
@@ -126,7 +127,14 @@ $templatecontext = [
     'addblockbutton' => $addblockbutton,
     'enablecourseindex' => $themesettings->enablecourseindex,
     'addcontentblockbutton' => $addcontentblockbutton,
-    'contentblocks' => $contentblocks
+    'contentblocks' => $contentblocks,
+    //Custom Variables used for Chat AI
+    'chat-user-email' =>$USER->email,
+    'chat-user-name' => fullname($USER),
+    'chat-user-sis' =>$USER->idnumber,
+    'chat-course-name' =>$COURSE->shortname,
+    'chat-course-id' => $COURSE->id,
+    'chat-course-category' => $COURSE->category
 ];
 
 $templatecontext = array_merge($templatecontext, $themesettings->footer());
