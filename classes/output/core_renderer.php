@@ -90,6 +90,12 @@ class core_renderer extends \theme_boost\output\core_renderer {
         return $output;
     }
 
+    public function navbar(): string {
+        //Shows in course navigation of tree
+        return $this->render_from_template('core/navbar', $this->page->navbar);
+
+    }
+
     /**
      * Returns HTML attributes to use within the body tag. This includes an ID and classes.
      *
