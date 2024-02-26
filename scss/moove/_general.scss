@@ -14,6 +14,11 @@ body {
     #page-footer{
         background-color: unset;
     }
+    #page-wrapper{
+        @include media-breakpoint-down(sm){
+            height: unset;
+        }
+    }
 
 }
 
