@@ -131,7 +131,7 @@ $templatecontext = [
     //Custom Variables used for Chat AI
     'useremail' =>$USER->email,
     'username' => fullname($USER),
-    'userisnumber' =>$USER->idnumber,
+    'useridnumber' =>$USER->idnumber,
     'coursename' =>$COURSE->shortname,
     'courseid' => $COURSE->id,
     'coursecategory' => $COURSE->category
