@@ -129,12 +129,12 @@ $templatecontext = [
     'addcontentblockbutton' => $addcontentblockbutton,
     'contentblocks' => $contentblocks,
     //Custom Variables used for Chat AI
-    'chat-user-email' =>$USER->email,
-    'chat-user-name' => fullname($USER),
-    'chat-user-sis' =>$USER->idnumber,
-    'chat-course-name' =>$COURSE->shortname,
-    'chat-course-id' => $COURSE->id,
-    'chat-course-category' => $COURSE->category
+    'useremail' =>$USER->email,
+    'username' => fullname($USER),
+    'useridnumber' =>$USER->idnumber,
+    'coursename' =>$COURSE->shortname,
+    'courseid' => $COURSE->id,
+    'coursecategory' => $COURSE->category
 ];
 
 $templatecontext = array_merge($templatecontext, $themesettings->footer());

@@ -5,7 +5,7 @@
 
 #page.drawers {
     padding: 0 15px;
-    height: initial;
+    height: 100%;
 
     .main-inner {
         margin-top: 0;
@@ -88,7 +88,7 @@ body.has-secondarynavigation {
     body.has-secondarynavigation {
         .drawer-left,
         .drawer-right {
-            top: calc(130px + 1px);
+            top: calc(105px + 1px);
             height: calc(100vh - 130px);
         }
     }
