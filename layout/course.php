@@ -134,7 +134,8 @@ $templatecontext = [
     'useridnumber' =>$USER->idnumber,
     'coursename' =>$COURSE->shortname,
     'courseid' => $COURSE->id,
-    'coursecategory' => $COURSE->category
+    'coursecategory' => $COURSE->category,
+    'coursefullname' => $COURSE->fullname
 ];
 
 $templatecontext = array_merge($templatecontext, $themesettings->footer());
